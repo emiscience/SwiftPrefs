@@ -772,7 +772,7 @@
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="98l-IQ-1Fe" secondAttribute="trailing" constant="20" symbolic="YES" id="Qcj-Fd-KMA"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eyZ-Ka-c3t" secondAttribute="trailing" constant="20" symbolic="YES" id="ZcP-HW-8PY"/>
                             <constraint firstItem="Z6C-2t-XOw" firstAttribute="top" secondItem="eyZ-Ka-c3t" secondAttribute="bottom" constant="26" id="ahg-x4-7Te"/>
-                            <constraint firstAttribute="bottom" secondItem="Z6C-2t-XOw" secondAttribute="bottom" constant="20" id="cHP-1v-dY9"/>
+                            <constraint firstAttribute="bottom" secondItem="Z6C-2t-XOw" secondAttribute="bottom" priority="500" constant="20" id="cHP-1v-dY9"/>
                             <constraint firstItem="98l-IQ-1Fe" firstAttribute="top" secondItem="Q3d-fY-slY" secondAttribute="bottom" constant="6" id="gLy-sa-kl2"/>
                             <constraint firstItem="4zR-O3-cDB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aKI-tT-xOh" secondAttribute="leading" constant="20" symbolic="YES" id="jgw-bx-W9N"/>
                             <constraint firstItem="Q3d-fY-slY" firstAttribute="leading" secondItem="kDE-YU-drr" secondAttribute="trailing" constant="8" symbolic="YES" id="liX-Qa-oXt"/>
