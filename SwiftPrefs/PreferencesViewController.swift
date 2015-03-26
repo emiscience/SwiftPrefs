@@ -36,7 +36,7 @@ class PreferencesViewController: NSTabViewController {
             frame.origin.y = frame.origin.y + (frame.size.height - contentFrame.size.height)
             frame.size.height = contentFrame.size.height;
             frame.size.width = contentFrame.size.width;
-            window?.setFrame(frame, display: true, animate: true)
+            window?.setFrame(frame, display: false, animate: true)
         }
         
         tabViewItem.view?.hidden = false
