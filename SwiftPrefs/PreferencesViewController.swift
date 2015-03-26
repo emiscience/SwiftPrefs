@@ -1,6 +1,6 @@
 import Cocoa
 
-// in the storyboard, ensure the NSTabView's delegate is set to this controller object
+// in the storyboard, ensure the view controller's transition checkboxes are all off, and the NSTabView's delegate is set to this controller object
 
 class PreferencesViewController: NSTabViewController {
    
@@ -8,8 +8,6 @@ class PreferencesViewController: NSTabViewController {
     
     // MARK: - NSTabViewDelegate
     
-    // in the storyboard, ensure the view controller's transition checkboxes are all off
-
     override func tabView(tabView: NSTabView, willSelectTabViewItem tabViewItem: NSTabViewItem) {
         super.tabView(tabView, willSelectTabViewItem: tabViewItem)
         
@@ -19,7 +17,7 @@ class PreferencesViewController: NSTabViewController {
         }
         tabViewItem.view!.hidden = true
         
-        // for each tabViewItem, save the original, as-laid-out-in-IB view sizes, so it can be used to resize the window with the selected tab changes
+        // for each tabViewItem, save the original, as-laid-out-in-IB view size, so it can be used to resize the window with the selected tab changes
         var size = (tabViewItem.view?.frame.size)!
         var originalSize = self.originalSizes[tabViewItem.label]
         if (originalSize != nil) {
