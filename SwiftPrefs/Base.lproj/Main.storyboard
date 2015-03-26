@@ -4,6 +4,24 @@
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6751"/>
     </dependencies>
     <scenes>
+        <!--Window Controller-->
+        <scene sceneID="wnb-Pe-RNZ">
+            <objects>
+                <windowController showSeguePresentationStyle="single" id="map-cP-kFL" sceneMemberID="viewController">
+                    <window key="window" title="General" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="QOw-BM-GKl">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="294" y="362" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+                    </window>
+                    <connections>
+                        <segue destination="hVY-gq-v56" kind="relationship" relationship="window.shadowedContentViewController" id="L4l-wd-xtp"/>
+                    </connections>
+                </windowController>
+                <customObject id="wiC-RD-tAu" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="566" y="62"/>
+        </scene>
         <!--Application-->
         <scene sceneID="JPo-4y-FX3">
             <objects>
@@ -23,7 +41,7 @@
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
                                         <menuItem title="Swift Preferences…" keyEquivalent="," id="BOF-NM-1cW">
                                             <connections>
-                                                <segue destination="hVY-gq-v56" kind="show" identifier="" id="NhW-4K-iBy"/>
+                                                <segue destination="map-cP-kFL" kind="show" id="At2-DQ-tAc"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
@@ -648,12 +666,12 @@
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="SwiftPrefs" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="581.5" y="-62"/>
+            <point key="canvasLocation" x="566.5" y="-264"/>
         </scene>
         <!--Preferences View Controller-->
         <scene sceneID="tzP-Db-G1S">
             <objects>
-                <tabViewController tabStyle="toolbar" id="hVY-gq-v56" customClass="PreferencesViewController" customModule="SwiftPrefs" customModuleProvider="target" sceneMemberID="viewController">
+                <tabViewController showSeguePresentationStyle="single" tabStyle="toolbar" id="hVY-gq-v56" customClass="PreferencesViewController" customModule="SwiftPrefs" customModuleProvider="target" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem identifier="" image="NSPreferencesGeneral" id="XV9-la-kPC"/>
                         <tabViewItem identifier="" image="NSAdvanced" id="mjd-3J-VQs"/>
@@ -675,7 +693,7 @@
                 </tabViewController>
                 <customObject id="4Ts-BM-gQ7" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="581" y="231"/>
+            <point key="canvasLocation" x="566" y="482"/>
         </scene>
         <!--General-->
         <scene sceneID="fgF-CH-hBP">

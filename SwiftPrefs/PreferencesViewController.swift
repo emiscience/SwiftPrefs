@@ -6,17 +6,6 @@ class PreferencesViewController: NSTabViewController {
    
     lazy var originalSizes = [String : NSSize]()
     
-    override func viewWillAppear() {
-        super.viewWillAppear()
-
-        // make the window not resizable by the user
-        let window = self.view.window
-        let styleMask = window?.styleMask
-        if (styleMask == nil) || (NSResizableWindowMask != styleMask! | NSResizableWindowMask) {
-            window?.styleMask &= ~NSResizableWindowMask
-        }
-    }
-    
     // MARK: - NSTabViewDelegate
     
     // in the storyboard, ensure the view controller's transition checkboxes are all off
@@ -41,6 +30,8 @@ class PreferencesViewController: NSTabViewController {
         
         let window = self.view.window
         if (window != nil) {
+            window?.title = tabViewItem.label
+
             var frame = window?.frame
             frame!.origin.y = frame!.origin.y + (frame!.size.height - size!.height)
             frame!.size.height = size!.height;
