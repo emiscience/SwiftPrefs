@@ -20,10 +20,10 @@ class PreferencesViewController: NSTabViewController {
         tabViewItem.view!.hidden = true
         
         // for each tabViewItem, save the original, as-laid-out-in-IB view sizes, so it can be used to resize the window with the selected tab changes
-        var size = tabViewItem.view?.frame.size
+        var size = (tabViewItem.view?.frame.size)!
         var originalSize = self.originalSizes[tabViewItem.label]
         if (originalSize != nil) {
-            size = originalSize
+            size = originalSize!
         } else {
             self.originalSizes[tabViewItem.label] = size
         }
@@ -32,11 +32,11 @@ class PreferencesViewController: NSTabViewController {
         if (window != nil) {
             window?.title = tabViewItem.label
 
-            var frame = window?.frame
-            frame!.origin.y = frame!.origin.y + (frame!.size.height - size!.height)
-            frame!.size.height = size!.height;
-            frame!.size.width = size!.width;
-            window?.setFrame(frame!, display: true, animate: true)
+            var frame = (window?.frame)!
+            frame.origin.y = frame.origin.y + (frame.size.height - size.height)
+            frame.size.height = size.height;
+            frame.size.width = size.width;
+            window?.setFrame(frame, display: true, animate: true)
         }
     }
     
