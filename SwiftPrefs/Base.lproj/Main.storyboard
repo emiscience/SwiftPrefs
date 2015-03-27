@@ -698,7 +698,7 @@
         <!--General-->
         <scene sceneID="fgF-CH-hBP">
             <objects>
-                <viewController title="General" id="Yil-VZ-ttf" customClass="PreferencesViewController" customModule="SwiftPrefs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="General" id="Yil-VZ-ttf" customClass="GeneralPreferencesViewController" customModule="SwiftPrefs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="aKI-tT-xOh">
                         <rect key="frame" x="0.0" y="0.0" width="266" height="152"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -782,11 +782,14 @@
                             <constraint firstItem="4GT-dy-df3" firstAttribute="trailing" secondItem="kDE-YU-drr" secondAttribute="trailing" id="vqb-3L-H7S"/>
                             <constraint firstItem="4GT-dy-df3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aKI-tT-xOh" secondAttribute="leading" constant="20" symbolic="YES" id="w2B-vN-chB"/>
                             <constraint firstItem="Q3d-fY-slY" firstAttribute="baseline" secondItem="kDE-YU-drr" secondAttribute="baseline" id="wGc-L3-b6P"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Z6C-2t-XOw" secondAttribute="trailing" constant="20" symbolic="YES" id="xJ7-WU-wNU"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Z6C-2t-XOw" secondAttribute="trailing" priority="750" constant="20" symbolic="YES" id="xJ7-WU-wNU"/>
                             <constraint firstItem="Q3d-fY-slY" firstAttribute="leading" secondItem="98l-IQ-1Fe" secondAttribute="leading" id="xKJ-9R-TKD"/>
                             <constraint firstItem="kDE-YU-drr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aKI-tT-xOh" secondAttribute="leading" constant="20" symbolic="YES" id="yXD-tT-Nvu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="constraint" destination="xJ7-WU-wNU" id="JTm-sv-Hsh"/>
+                    </connections>
                 </viewController>
                 <customObject id="aRd-Wn-fkq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
