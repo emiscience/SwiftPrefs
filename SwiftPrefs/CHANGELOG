@@ -1,0 +1,8 @@
+20151118 as@emiscience.com
+    - Added .DS_STORE to .gitignore
+    - Added Swift-2.0 branch
+    - Added CHANGELOG
+    - Updated project to Xcode 7.0 GM
+    - Updated swift code to Swift 2.0 (Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72))
+    - Removed All constraints from "General" preferences view & reset to suggested constraints through IB
+    - Removed the "Hiding and Unhiding" of the views, as these are used in the transition animations so can't be hidden.
