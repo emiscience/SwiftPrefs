@@ -8,15 +8,15 @@ class GeneralPreferencesViewController: NSViewController {
     var oldPriority : NSLayoutPriority!
     
     override func viewWillAppear() {
-        self.oldPriority = self.constraint.priority
+        //        self.oldPriority = self.constraint.priority
     }
 
     override func viewDidDisappear() {
-        self.constraint.priority = 1
+        //        self.constraint.priority = 1
     }
     
     override func viewDidAppear() {
-        self.constraint.priority = self.oldPriority
+        //        self.constraint.priority = self.oldPriority
     }
     
 }
