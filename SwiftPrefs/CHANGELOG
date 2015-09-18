@@ -1,4 +1,5 @@
 20151118 as@emiscience.com
+    - Added .DS_STORE to .gitignore
     - Added Swift-2.0 branch
     - Added CHANGELOG
     - Updated project to Xcode 7.0 GM
