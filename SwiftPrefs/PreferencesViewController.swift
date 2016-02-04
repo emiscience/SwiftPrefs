@@ -12,12 +12,6 @@ class PreferencesViewController: NSTabViewController {
         super.tabView(tabView, willSelectTabViewItem: tabViewItem)
         
         _ = tabView.selectedTabViewItem
-//        if (currentTabViewItem != nil) {
-//            currentTabViewItem!.view!.hidden = true
-//        }
-//        tabViewItem!.view!.hidden = true
-        
-        // for each tabViewItem, save the original, as-laid-out-in-IB view size, so it can be used to resize the window with the selected tab changes
         let originalSize = self.originalSizes[tabViewItem!.label]
         if (originalSize == nil) {
             self.originalSizes[tabViewItem!.label] = (tabViewItem!.view?.frame.size)!
