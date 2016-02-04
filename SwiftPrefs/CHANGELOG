@@ -1,3 +1,6 @@
+v2.0.0
+    - Separate storyboards for the prefs and main windows/viewcontrollers
+
 v1.0.1
     - Hotfix 2.0 refactor merge
     - Version bump
