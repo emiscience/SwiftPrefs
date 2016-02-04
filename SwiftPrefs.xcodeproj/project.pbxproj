@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C4B14E71C62D9DF00649A7E /* PreferencesAdvancedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B14E51C62D9DF00649A7E /* PreferencesAdvancedViewController.swift */; };
 		0CD4B1A81C62D0C2007EAB31 /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD4B1A61C62D0C2007EAB31 /* Preferences.storyboard */; };
 		0CD4B1AA1C62D238007EAB31 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4B1A91C62D238007EAB31 /* PreferencesWindowController.swift */; };
-		CB2E77511AC5834C006ECF87 /* GeneralPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2E77501AC5834C006ECF87 /* GeneralPreferencesViewController.swift */; };
+		CB2E77511AC5834C006ECF87 /* PreferencesGeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2E77501AC5834C006ECF87 /* PreferencesGeneralViewController.swift */; };
 		CB518C051AC33D0200A975F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB518C041AC33D0200A975F6 /* AppDelegate.swift */; };
 		CB518C0C1AC33D0200A975F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB518C0A1AC33D0200A975F6 /* Main.storyboard */; };
 		CB518C221AC33D0B00A975F6 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB518C211AC33D0B00A975F6 /* PreferencesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C4B14E51C62D9DF00649A7E /* PreferencesAdvancedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesAdvancedViewController.swift; sourceTree = "<group>"; };
 		0C9657FD1BAC37D2002CC272 /* CHANGELOG */ = {isa = PBXFileReference; lastKnownFileType = text; path = CHANGELOG; sourceTree = "<group>"; };
 		0CD4B1A71C62D0C2007EAB31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SwiftPrefs/Base.lproj/Preferences.storyboard; sourceTree = "<group>"; };
 		0CD4B1A91C62D238007EAB31 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
-		CB2E77501AC5834C006ECF87 /* GeneralPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralPreferencesViewController.swift; sourceTree = "<group>"; };
+		CB2E77501AC5834C006ECF87 /* PreferencesGeneralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesGeneralViewController.swift; sourceTree = "<group>"; };
 		CB518BFF1AC33D0200A975F6 /* SwiftPrefs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPrefs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB518C031AC33D0200A975F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB518C041AC33D0200A975F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +40,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C4B14E41C62D9A700649A7E /* Advanced */ = {
+			isa = PBXGroup;
+			children = (
+				0C4B14E51C62D9DF00649A7E /* PreferencesAdvancedViewController.swift */,
+			);
+			name = Advanced;
+			sourceTree = "<group>";
+		};
 		0CD4B1A31C62D055007EAB31 /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
@@ -50,7 +60,7 @@
 		0CD4B1A41C62D083007EAB31 /* General */ = {
 			isa = PBXGroup;
 			children = (
-				CB2E77501AC5834C006ECF87 /* GeneralPreferencesViewController.swift */,
+				CB2E77501AC5834C006ECF87 /* PreferencesGeneralViewController.swift */,
 			);
 			name = General;
 			sourceTree = "<group>";
@@ -61,6 +71,7 @@
 				0CD4B1A91C62D238007EAB31 /* PreferencesWindowController.swift */,
 				CB518C211AC33D0B00A975F6 /* PreferencesViewController.swift */,
 				0CD4B1A41C62D083007EAB31 /* General */,
+				0C4B14E41C62D9A700649A7E /* Advanced */,
 			);
 			name = Preferences;
 			sourceTree = "<group>";
@@ -173,7 +184,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB518C051AC33D0200A975F6 /* AppDelegate.swift in Sources */,
-				CB2E77511AC5834C006ECF87 /* GeneralPreferencesViewController.swift in Sources */,
+				0C4B14E71C62D9DF00649A7E /* PreferencesAdvancedViewController.swift in Sources */,
+				CB2E77511AC5834C006ECF87 /* PreferencesGeneralViewController.swift in Sources */,
 				0CD4B1AA1C62D238007EAB31 /* PreferencesWindowController.swift in Sources */,
 				CB518C221AC33D0B00A975F6 /* PreferencesViewController.swift in Sources */,
 			);

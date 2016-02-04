@@ -25,7 +25,7 @@
         <!--Preferences View Controller-->
         <scene sceneID="tzP-Db-G1S">
             <objects>
-                <tabViewController showSeguePresentationStyle="single" tabStyle="toolbar" id="hVY-gq-v56" customClass="PreferencesViewController" customModule="SwiftPrefs" customModuleProvider="target" sceneMemberID="viewController">
+                <tabViewController storyboardIdentifier="preferencesViewControllerIdentifier" showSeguePresentationStyle="single" tabStyle="toolbar" id="hVY-gq-v56" customClass="PreferencesViewController" customModule="SwiftPrefs" customModuleProvider="target" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem identifier="" image="NSPreferencesGeneral" id="XV9-la-kPC"/>
                         <tabViewItem identifier="" image="NSAdvanced" id="mjd-3J-VQs"/>
@@ -47,12 +47,12 @@
                 </tabViewController>
                 <customObject id="4Ts-BM-gQ7" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="566" y="482"/>
+            <point key="canvasLocation" x="566" y="483"/>
         </scene>
         <!--General-->
         <scene sceneID="fgF-CH-hBP">
             <objects>
-                <viewController title="General" showSeguePresentationStyle="single" id="Yil-VZ-ttf" customClass="GeneralPreferencesViewController" customModule="SwiftPrefs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="General" showSeguePresentationStyle="single" id="Yil-VZ-ttf" customClass="PreferencesGeneralViewController" customModule="SwiftPrefs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="aKI-tT-xOh">
                         <rect key="frame" x="0.0" y="0.0" width="266" height="152"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -82,16 +82,9 @@
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
-                            </button>
-                            <button translatesAutoresizingMaskIntoConstraints="NO" id="98l-IQ-1Fe">
-                                <rect key="frame" x="119" y="94" width="32" height="18"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="28" id="VVU-TX-xaf"/>
-                                </constraints>
-                                <buttonCell key="cell" type="check" title="B" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="d3t-0q-21t">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
+                                <connections>
+                                    <action selector="optionOneAction:" target="Yil-VZ-ttf" id="6Y5-MK-kwt"/>
+                                </connections>
                             </button>
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eyZ-Ka-c3t">
                                 <rect key="frame" x="119" y="64" width="73" height="26"/>
@@ -109,6 +102,9 @@
                                         </items>
                                     </menu>
                                 </popUpButtonCell>
+                                <connections>
+                                    <action selector="ItemsSelectionDidChange:" target="Yil-VZ-ttf" id="pJ7-ei-Vwo"/>
+                                </connections>
                             </popUpButton>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Z6C-2t-XOw">
                                 <rect key="frame" x="115" y="13" width="137" height="32"/>
@@ -116,6 +112,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="OtherSttingsButtonAction:" target="Yil-VZ-ttf" id="NaL-EV-LBs"/>
+                                </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4zR-O3-cDB">
                                 <rect key="frame" x="18" y="23" width="97" height="17"/>
@@ -125,6 +124,19 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="98l-IQ-1Fe">
+                                <rect key="frame" x="119" y="94" width="47" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="VVU-TX-xaf"/>
+                                </constraints>
+                                <buttonCell key="cell" type="check" title="Two" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="d3t-0q-21t">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="optionTwoAction:" target="Yil-VZ-ttf" id="6D7-HD-kqZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Z6C-2t-XOw" secondAttribute="trailing" constant="20" symbolic="YES" id="02G-oQ-bJM"/>
@@ -154,7 +166,7 @@
         <!--Advanced-->
         <scene sceneID="VS7-JW-ozc">
             <objects>
-                <viewController title="Advanced" showSeguePresentationStyle="single" id="KH6-LF-Rm2" sceneMemberID="viewController">
+                <viewController title="Advanced" showSeguePresentationStyle="single" id="KH6-LF-Rm2" customClass="PreferencesAdvancedViewController" customModule="SwiftPrefs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="iGy-cX-kKS">
                         <rect key="frame" x="0.0" y="0.0" width="204" height="61"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -165,6 +177,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="deleteAllPreferencesAction:" target="KH6-LF-Rm2" id="O62-sY-CBS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -176,6 +191,9 @@
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="M6q-tS-Lfc" secondAttribute="trailing" constant="20" id="mRc-Es-cH9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="deleteAllPreferencesButton" destination="M6q-tS-Lfc" id="iiK-mc-qV7"/>
+                    </connections>
                 </viewController>
                 <customObject id="4YC-fG-jJO" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

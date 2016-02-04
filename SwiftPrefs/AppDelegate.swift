@@ -8,9 +8,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let wcSB = NSStoryboard(name: "Preferences", bundle: NSBundle.mainBundle())
         // or whichever bundle
         return wcSB.instantiateInitialController() as! PreferencesWindowController
-   }()
+    }()
+
     
-    @IBAction func showPreferencesWindow (sender: NSObject?){
+    @IBAction func showPreferencesWindow(sender: NSObject?){
         debugPrint("show")
         self.preferencesWindowController.showWindow(self)
     }

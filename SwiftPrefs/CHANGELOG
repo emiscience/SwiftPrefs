@@ -1,3 +1,13 @@
+v2.0.2-dev
+    - Prefs: now has viewControllers for the Advanced and general views
+    - Prefs views (Advanced and General) linked (IBAction)
+
+v2.0.1-dev
+    - Prefs (App Dele) now responding to first responder
+            "showPreferencesWindow)"
+    - Prefs menu item under the App menu linked to the first responder
+    - Button in the "Main" window linked to the first responder"
+
 v2.0.0
     - Separate storyboards for the prefs and main windows/viewcontrollers
 
