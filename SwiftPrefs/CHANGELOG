@@ -1,3 +1,9 @@
+v2.0.3-dev
+    - Prefs: Added another tab (between General and Advanved) - Computer
+                    items are cocoa bound in this tab
+    - PrefsWindowController: Now has an IBOutlet to reset the prefs in the new
+                    computer tab in preferences. (keys are manually typed in)
+
 v2.0.2-dev
     - Prefs: now has viewControllers for the Advanced and general views
     - Prefs views (Advanced and General) linked (IBAction)
