@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CD4B1A81C62D0C2007EAB31 /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD4B1A61C62D0C2007EAB31 /* Preferences.storyboard */; };
+		0CD4B1AA1C62D238007EAB31 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4B1A91C62D238007EAB31 /* PreferencesWindowController.swift */; };
 		CB2E77511AC5834C006ECF87 /* GeneralPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2E77501AC5834C006ECF87 /* GeneralPreferencesViewController.swift */; };
 		CB518C051AC33D0200A975F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB518C041AC33D0200A975F6 /* AppDelegate.swift */; };
 		CB518C0C1AC33D0200A975F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB518C0A1AC33D0200A975F6 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 
 /* Begin PBXFileReference section */
 		0C9657FD1BAC37D2002CC272 /* CHANGELOG */ = {isa = PBXFileReference; lastKnownFileType = text; path = CHANGELOG; sourceTree = "<group>"; };
+		0CD4B1A71C62D0C2007EAB31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SwiftPrefs/Base.lproj/Preferences.storyboard; sourceTree = "<group>"; };
+		0CD4B1A91C62D238007EAB31 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
 		CB2E77501AC5834C006ECF87 /* GeneralPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralPreferencesViewController.swift; sourceTree = "<group>"; };
 		CB518BFF1AC33D0200A975F6 /* SwiftPrefs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPrefs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB518C031AC33D0200A975F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +38,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CD4B1A31C62D055007EAB31 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				0CD4B1A61C62D0C2007EAB31 /* Preferences.storyboard */,
+				0CD4B1A51C62D088007EAB31 /* Preferences */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		0CD4B1A41C62D083007EAB31 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				CB2E77501AC5834C006ECF87 /* GeneralPreferencesViewController.swift */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		0CD4B1A51C62D088007EAB31 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				0CD4B1A91C62D238007EAB31 /* PreferencesWindowController.swift */,
+				CB518C211AC33D0B00A975F6 /* PreferencesViewController.swift */,
+				0CD4B1A41C62D083007EAB31 /* General */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
 		CB518BF61AC33D0200A975F6 = {
 			isa = PBXGroup;
 			children = (
@@ -55,9 +86,8 @@
 			children = (
 				0C9657FD1BAC37D2002CC272 /* CHANGELOG */,
 				CB518C041AC33D0200A975F6 /* AppDelegate.swift */,
-				CB518C211AC33D0B00A975F6 /* PreferencesViewController.swift */,
-				CB2E77501AC5834C006ECF87 /* GeneralPreferencesViewController.swift */,
 				CB518C0A1AC33D0200A975F6 /* Main.storyboard */,
+				0CD4B1A31C62D055007EAB31 /* Preferences */,
 				CB518C021AC33D0200A975F6 /* Supporting Files */,
 			);
 			path = SwiftPrefs;
@@ -131,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB518C0C1AC33D0200A975F6 /* Main.storyboard in Resources */,
+				0CD4B1A81C62D0C2007EAB31 /* Preferences.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +174,7 @@
 			files = (
 				CB518C051AC33D0200A975F6 /* AppDelegate.swift in Sources */,
 				CB2E77511AC5834C006ECF87 /* GeneralPreferencesViewController.swift in Sources */,
+				0CD4B1AA1C62D238007EAB31 /* PreferencesWindowController.swift in Sources */,
 				CB518C221AC33D0B00A975F6 /* PreferencesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +182,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		0CD4B1A61C62D0C2007EAB31 /* Preferences.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CD4B1A71C62D0C2007EAB31 /* Base */,
+			);
+			name = Preferences.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		CB518C0A1AC33D0200A975F6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
