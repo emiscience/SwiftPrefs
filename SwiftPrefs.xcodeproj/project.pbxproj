@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C4B14E71C62D9DF00649A7E /* PreferencesAdvancedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B14E51C62D9DF00649A7E /* PreferencesAdvancedViewController.swift */; };
+		0CAC8CBC1C62E718008EFC44 /* Computer_README in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC8CBB1C62E718008EFC44 /* Computer_README */; };
 		0CD4B1A81C62D0C2007EAB31 /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD4B1A61C62D0C2007EAB31 /* Preferences.storyboard */; };
 		0CD4B1AA1C62D238007EAB31 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4B1A91C62D238007EAB31 /* PreferencesWindowController.swift */; };
 		CB2E77511AC5834C006ECF87 /* PreferencesGeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2E77501AC5834C006ECF87 /* PreferencesGeneralViewController.swift */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		0C4B14E51C62D9DF00649A7E /* PreferencesAdvancedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesAdvancedViewController.swift; sourceTree = "<group>"; };
 		0C9657FD1BAC37D2002CC272 /* CHANGELOG */ = {isa = PBXFileReference; lastKnownFileType = text; path = CHANGELOG; sourceTree = "<group>"; };
+		0CAC8CBB1C62E718008EFC44 /* Computer_README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Computer_README; sourceTree = "<group>"; };
 		0CD4B1A71C62D0C2007EAB31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SwiftPrefs/Base.lproj/Preferences.storyboard; sourceTree = "<group>"; };
 		0CD4B1A91C62D238007EAB31 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
 		CB2E77501AC5834C006ECF87 /* PreferencesGeneralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesGeneralViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +50,14 @@
 			name = Advanced;
 			sourceTree = "<group>";
 		};
+		0CAC8CBA1C62E6F3008EFC44 /* Computer */ = {
+			isa = PBXGroup;
+			children = (
+				0CAC8CBB1C62E718008EFC44 /* Computer_README */,
+			);
+			name = Computer;
+			sourceTree = "<group>";
+		};
 		0CD4B1A31C62D055007EAB31 /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +81,7 @@
 				0CD4B1A91C62D238007EAB31 /* PreferencesWindowController.swift */,
 				CB518C211AC33D0B00A975F6 /* PreferencesViewController.swift */,
 				0CD4B1A41C62D083007EAB31 /* General */,
+				0CAC8CBA1C62E6F3008EFC44 /* Computer */,
 				0C4B14E41C62D9A700649A7E /* Advanced */,
 			);
 			name = Preferences;
@@ -173,6 +184,7 @@
 			files = (
 				CB518C0C1AC33D0200A975F6 /* Main.storyboard in Resources */,
 				0CD4B1A81C62D0C2007EAB31 /* Preferences.storyboard in Resources */,
+				0CAC8CBC1C62E718008EFC44 /* Computer_README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +261,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -286,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -300,6 +312,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SwiftPrefs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.karlmoskowski.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -314,6 +327,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SwiftPrefs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.karlmoskowski.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

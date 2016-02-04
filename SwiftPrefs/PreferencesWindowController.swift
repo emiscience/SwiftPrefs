@@ -21,4 +21,22 @@ class PreferencesWindowController: NSWindowController {
         
     }
     
+    @IBAction func resetPreferencesFirstResponderAction(sender: AnyObject?){
+        
+        let d = NSUserDefaults.standardUserDefaults()
+        
+        d.synchronize()
+        d.setObject(nil, forKey: "computerFirstPreference")
+        d.setObject(nil, forKey: "computerSecondPreference")
+        d.setObject(nil, forKey: "computerThirdPreference")
+        d.setObject(nil, forKey: "computerFourthPreference")
+        d.setObject(nil, forKey: "computerFifthPreference")
+        d.setObject(nil, forKey: "computerSixthPreference")
+        
+        
+        
+        
+        
+    }
+    
 }
