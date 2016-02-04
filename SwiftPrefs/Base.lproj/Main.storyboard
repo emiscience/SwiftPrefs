@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
     </dependencies>
     <scenes>
         <!--Window Controller-->
@@ -680,7 +680,6 @@
                     <tabView key="tabView" type="noTabsNoBorder" id="SS2-JJ-fG8">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                         <font key="font" metaFont="message"/>
                         <tabViewItems/>
                         <connections>
@@ -706,7 +705,6 @@
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kDE-YU-drr">
                                 <rect key="frame" x="58" y="115" width="57" height="17"/>
-                                <animations/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Options:" id="dms-3F-H30">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -715,7 +713,6 @@
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4GT-dy-df3">
                                 <rect key="frame" x="73" y="70" width="42" height="17"/>
-                                <animations/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Items:" id="Fbg-YC-RtF">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -727,7 +724,6 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="s9g-GB-ONg"/>
                                 </constraints>
-                                <animations/>
                                 <buttonCell key="cell" type="check" title="One" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="ocg-xv-w04">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -738,7 +734,6 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="28" id="VVU-TX-xaf"/>
                                 </constraints>
-                                <animations/>
                                 <buttonCell key="cell" type="check" title="B" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="d3t-0q-21t">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -749,7 +744,6 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="68" id="ykh-da-fXt"/>
                                 </constraints>
-                                <animations/>
                                 <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Psn-t8-sEb" id="yAu-sJ-yNd">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="menu"/>
@@ -764,7 +758,6 @@
                             </popUpButton>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Z6C-2t-XOw">
                                 <rect key="frame" x="115" y="13" width="137" height="32"/>
-                                <animations/>
                                 <buttonCell key="cell" type="push" title="Reset Warnings" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vZv-Us-UIi">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -772,7 +765,6 @@
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4zR-O3-cDB">
                                 <rect key="frame" x="18" y="23" width="97" height="17"/>
-                                <animations/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Other Settings:" id="Fqc-cu-3nh">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -799,7 +791,6 @@
                             <constraint firstItem="eyZ-Ka-c3t" firstAttribute="top" secondItem="98l-IQ-1Fe" secondAttribute="bottom" constant="8" id="iNo-tt-Qmw"/>
                             <constraint firstItem="4GT-dy-df3" firstAttribute="leading" secondItem="aKI-tT-xOh" secondAttribute="leading" constant="75" id="rCk-m0-tDg"/>
                         </constraints>
-                        <animations/>
                     </view>
                 </viewController>
                 <customObject id="aRd-Wn-fkq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -816,7 +807,6 @@
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="M6q-tS-Lfc">
                                 <rect key="frame" x="14" y="13" width="175" height="32"/>
-                                <animations/>
                                 <buttonCell key="cell" type="push" title="Delete All Preferences" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NbE-DD-HZz">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -831,7 +821,6 @@
                             <constraint firstItem="M6q-tS-Lfc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iGy-cX-kKS" secondAttribute="top" constant="20" id="ewl-kz-Ld0"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="M6q-tS-Lfc" secondAttribute="trailing" constant="20" id="mRc-Es-cH9"/>
                         </constraints>
-                        <animations/>
                     </view>
                 </viewController>
                 <customObject id="4YC-fG-jJO" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
