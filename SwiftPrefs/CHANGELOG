@@ -1,3 +1,7 @@
+v2.0.2-dev
+    - Prefs: now has viewControllers for the Advanced and general views
+    - Prefs views (Advanced and General) linked (IBAction)
+
 v2.0.1-dev
     - Prefs (App Dele) now responding to first responder
             "showPreferencesWindow)"
