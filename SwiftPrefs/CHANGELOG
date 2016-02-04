@@ -1,3 +1,11 @@
+
+
+20160204 as@emiscience.com
+    - develop branch is copy of master (and is to be used for development only)
+    - Added version 1.0.0
+    - Had orignal developer update readme with their details
+
+
 20151118 as@emiscience.com
     - Added .DS_STORE to .gitignore
     - Added Swift-2.0 branch
