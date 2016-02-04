@@ -10,7 +10,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return wcSB.instantiateInitialController() as! PreferencesWindowController
    }()
     
-    @IBAction func showPreferencesWindow (sender: NSObject?){
+    @IBAction func showPreferencesWindow(sender: NSObject?){
         debugPrint("show")
         self.preferencesWindowController.showWindow(self)
     }
