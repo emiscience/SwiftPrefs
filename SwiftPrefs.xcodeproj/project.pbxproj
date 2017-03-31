@@ -8,14 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0C4B14E71C62D9DF00649A7E /* PreferencesAdvancedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B14E51C62D9DF00649A7E /* PreferencesAdvancedViewController.swift */; };
-		0CAC8CBC1C62E718008EFC44 /* Computer_README in Resources */ = {isa = PBXBuildFile; fileRef = 0CAC8CBB1C62E718008EFC44 /* Computer_README */; };
 		0CD4B1A81C62D0C2007EAB31 /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD4B1A61C62D0C2007EAB31 /* Preferences.storyboard */; };
 		0CD4B1AA1C62D238007EAB31 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4B1A91C62D238007EAB31 /* PreferencesWindowController.swift */; };
-		3AA69D281E8E13E80051D8FB /* CONRIBUTIONS.md in Sources */ = {isa = PBXBuildFile; fileRef = 3AA69D251E8E13E80051D8FB /* CONRIBUTIONS.md */; };
-		3AA69D291E8E13E80051D8FB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3AA69D261E8E13E80051D8FB /* README.md */; };
-		3AA69D2A1E8E13E80051D8FB /* TODO.md in Sources */ = {isa = PBXBuildFile; fileRef = 3AA69D271E8E13E80051D8FB /* TODO.md */; };
-		3AA69D2F1E8E17F00051D8FB /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 3AA69D2E1E8E17F00051D8FB /* CHANGELOG.md */; };
-		3AD56C751E8DE4BF00625B09 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3AD56C741E8DE4BF00625B09 /* LICENSE */; };
+		3AA69D321E8E18610051D8FB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3AD56C741E8DE4BF00625B09 /* LICENSE */; };
 		CB2E77511AC5834C006ECF87 /* PreferencesGeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2E77501AC5834C006ECF87 /* PreferencesGeneralViewController.swift */; };
 		CB518C051AC33D0200A975F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB518C041AC33D0200A975F6 /* AppDelegate.swift */; };
 		CB518C0C1AC33D0200A975F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB518C0A1AC33D0200A975F6 /* Main.storyboard */; };
@@ -206,8 +201,7 @@
 			files = (
 				CB518C0C1AC33D0200A975F6 /* Main.storyboard in Resources */,
 				0CD4B1A81C62D0C2007EAB31 /* Preferences.storyboard in Resources */,
-				3AD56C751E8DE4BF00625B09 /* LICENSE in Resources */,
-				0CAC8CBC1C62E718008EFC44 /* Computer_README in Resources */,
+				3AA69D321E8E18610051D8FB /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,13 +213,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB518C051AC33D0200A975F6 /* AppDelegate.swift in Sources */,
-				3AA69D281E8E13E80051D8FB /* CONRIBUTIONS.md in Sources */,
-				3AA69D2A1E8E13E80051D8FB /* TODO.md in Sources */,
 				0C4B14E71C62D9DF00649A7E /* PreferencesAdvancedViewController.swift in Sources */,
 				CB2E77511AC5834C006ECF87 /* PreferencesGeneralViewController.swift in Sources */,
 				0CD4B1AA1C62D238007EAB31 /* PreferencesWindowController.swift in Sources */,
-				3AA69D291E8E13E80051D8FB /* README.md in Sources */,
-				3AA69D2F1E8E17F00051D8FB /* CHANGELOG.md in Sources */,
 				CB518C221AC33D0B00A975F6 /* PreferencesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
