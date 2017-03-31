@@ -7,19 +7,19 @@ class PreferencesGeneralViewController: NSViewController {
     @IBOutlet weak var constraint : NSLayoutConstraint!
     var oldPriority : NSLayoutPriority!
 
-    @IBAction func optionOneAction(sender: AnyObject) {
-        debugPrint("change: \(__FUNCTION__)")
+    @IBAction func optionOneAction(_ sender: AnyObject) {
+        debugPrint("change: \(#function)")
     }
     
-    @IBAction func optionTwoAction(sender: AnyObject) {
-        debugPrint("change: \(__FUNCTION__)")
+    @IBAction func optionTwoAction(_ sender: AnyObject) {
+        debugPrint("change: \(#function)")
     }
     
-    @IBAction func ItemsSelectionDidChange(sender: AnyObject) {
-        debugPrint("change: \(__FUNCTION__)")
+    @IBAction func ItemsSelectionDidChange(_ sender: AnyObject) {
+        debugPrint("change: \(#function)")
     }
     
-    @IBAction func OtherSttingsButtonAction(sender: AnyObject) {
+    @IBAction func OtherSttingsButtonAction(_ sender: AnyObject) {
         debugPrint("pressed: Other Settings Button")
     }
     

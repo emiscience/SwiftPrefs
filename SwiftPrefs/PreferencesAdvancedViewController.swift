@@ -13,8 +13,8 @@ class PreferencesAdvancedViewController: NSViewController {
     @IBOutlet var deleteAllPreferencesButton: NSButton!
     
     
-    @IBAction func deleteAllPreferencesAction(sender: AnyObject) {
-        debugPrint("Button: \(__FUNCTION__)")
+    @IBAction func deleteAllPreferencesAction(_ sender: AnyObject) {
+        debugPrint("Button: \(#function)")
     }
     
 }

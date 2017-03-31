@@ -5,7 +5,7 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     lazy var preferencesWindowController: PreferencesWindowController  = {
-        let wcSB = NSStoryboard(name: "Preferences", bundle: NSBundle.mainBundle())
+        let wcSB = NSStoryboard(name: "Preferences", bundle: Bundle.main)
         // or whichever bundle
         return wcSB.instantiateInitialController() as! PreferencesWindowController
     }()
@@ -22,7 +22,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 //    }()
 
     
-    @IBAction func showPreferencesWindow(sender: NSObject?){
+    @IBAction func showPreferencesWindow(_ sender: NSObject?){
         self.preferencesWindowController.showWindow(self)
     }
     
