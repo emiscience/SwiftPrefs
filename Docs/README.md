@@ -3,6 +3,7 @@
 ### Whats New
 
 ```
+31 Mar 2016 - Version bumpted to 3.0.0
 31 Mar 2016 - Project file has been updated to Xcode 8.3 (public) release.
 31 Mar 2015 - Code updated to Swift 3 (tested on Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38))
 ```
