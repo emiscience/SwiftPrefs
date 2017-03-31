@@ -1,13 +1,17 @@
 TODO:
 =====
 
-Tasks for future versions as from 3.0:
+Short Term:
+
+- Get versioning in sync with swift versions. 
+
+Medium Term:
 
 - Rearrange/refactor to Swift Package (nibless / storyboardless)
 - Make SPM (Swift Package Manager) compatible
 - Make Cocoapods compatible
 - Make Carthage compatible
 
-Tasks for the long-term:
+Long Term:
 
 - Open to linux Swift commity
