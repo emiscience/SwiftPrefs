@@ -1,3 +1,10 @@
+v3.0.0
+    - Version Bump: Bumped Version to 3.0.0 
+    - Changed: Changed the version to be the same as the swift version. So happy 3.0!
+    - Version bump: To 3.0
+    - Project Update: to lates Xcode (Version 8.3 (8E162)
+    - Removed: __FUNCTION__ references and replaced with #function
+
 v2.0.3-dev
     - Prefs: Added another tab (between General and Advanved) - Computer
                     items are cocoa bound in this tab
