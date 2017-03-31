@@ -1,8 +1,10 @@
-v3.0.1
-    - Moved docs to the root of the project
+v3.0.2
     - Removed Computer_Readme and replaced with a ViewContoller with comments
     - Removed commentaries
     - Changed bundle id
+
+v3.0.1
+    - Moved docs to the root of the project
 
 v3.0.0
     - Version Bump: Bumped Version to 3.0.0
