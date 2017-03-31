@@ -10,6 +10,7 @@
 		0C4B14E71C62D9DF00649A7E /* PreferencesAdvancedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B14E51C62D9DF00649A7E /* PreferencesAdvancedViewController.swift */; };
 		0CD4B1A81C62D0C2007EAB31 /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD4B1A61C62D0C2007EAB31 /* Preferences.storyboard */; };
 		0CD4B1AA1C62D238007EAB31 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4B1A91C62D238007EAB31 /* PreferencesWindowController.swift */; };
+		3A3FD8861E8E4D82000E4C45 /* PreferencesComputerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3FD8851E8E4D82000E4C45 /* PreferencesComputerViewController.swift */; };
 		3AFDC7C71E8E264C00FD85AA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3AFDC7C21E8E264C00FD85AA /* LICENSE */; };
 		CB2E77511AC5834C006ECF87 /* PreferencesGeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2E77501AC5834C006ECF87 /* PreferencesGeneralViewController.swift */; };
 		CB518C051AC33D0200A975F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB518C041AC33D0200A975F6 /* AppDelegate.swift */; };
@@ -19,9 +20,9 @@
 
 /* Begin PBXFileReference section */
 		0C4B14E51C62D9DF00649A7E /* PreferencesAdvancedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesAdvancedViewController.swift; sourceTree = "<group>"; };
-		0CAC8CBB1C62E718008EFC44 /* Computer_README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Computer_README; sourceTree = "<group>"; };
 		0CD4B1A71C62D0C2007EAB31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SwiftPrefs/Base.lproj/Preferences.storyboard; sourceTree = "<group>"; };
 		0CD4B1A91C62D238007EAB31 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
+		3A3FD8851E8E4D82000E4C45 /* PreferencesComputerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesComputerViewController.swift; sourceTree = "<group>"; };
 		3AFDC7C01E8E264C00FD85AA /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		3AFDC7C11E8E264C00FD85AA /* CONRIBUTIONS.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CONRIBUTIONS.md; sourceTree = "<group>"; };
 		3AFDC7C21E8E264C00FD85AA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -57,7 +58,7 @@
 		0CAC8CBA1C62E6F3008EFC44 /* Computer */ = {
 			isa = PBXGroup;
 			children = (
-				0CAC8CBB1C62E718008EFC44 /* Computer_README */,
+				3A3FD8851E8E4D82000E4C45 /* PreferencesComputerViewController.swift */,
 			);
 			name = Computer;
 			sourceTree = "<group>";
@@ -216,6 +217,7 @@
 				0C4B14E71C62D9DF00649A7E /* PreferencesAdvancedViewController.swift in Sources */,
 				CB2E77511AC5834C006ECF87 /* PreferencesGeneralViewController.swift in Sources */,
 				0CD4B1AA1C62D238007EAB31 /* PreferencesWindowController.swift in Sources */,
+				3A3FD8861E8E4D82000E4C45 /* PreferencesComputerViewController.swift in Sources */,
 				CB518C221AC33D0B00A975F6 /* PreferencesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -321,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -337,7 +339,7 @@
 				INFOPLIST_FILE = SwiftPrefs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.karlmoskowski.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emiscience.mac.SwiftPrefs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -353,7 +355,7 @@
 				INFOPLIST_FILE = SwiftPrefs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.karlmoskowski.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emiscience.mac.SwiftPrefs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
